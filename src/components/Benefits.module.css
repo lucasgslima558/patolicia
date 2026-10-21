@@ -1,0 +1,2 @@
+.benefit{display:flex;gap:12px;align-items:flex-start}
+.icon{width:56px;height:56px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700}
