@@ -1,4 +1,4 @@
-# Nome do Produto
+# Patolícia
 
 ## Integrantes
 
@@ -8,53 +8,39 @@
 
 ## Sobre o produto
 
-Breve descrição da ideia, público e proposta do produto.
+O produto é um site de venda de bolinhos macios (dumplings) em formato de pato. Seu público-alvo são pessoas que gostam de doces criativos, presentes diferentes e produtos visualmente fofos.
 
 
 ## Jornada de construção
 
 ### Ideia inicial
 
-Como surgiu a ideia do produto?
+O produto surgiu a partir de um jogo focado em fabricar bolinhos macios, onde uma ideia divertida surgiu de bolinhos macios em formato de pato.
+Após analisar sites de confeitaria como o Sucrier e receber inspiração de um doce japonês chamado Hiyoko Manju, chegamos a conclusão de que essa ideia era verídica.
 
-Quais alternativas foram consideradas?
+Essa foi a primeira e única alternativa de produto e, por ser criativa e única, acabou sendo selecionada.
 
 
 ### Pesquisa e referências
 
-O que vocês pesquisaram?
+Pesquisamos por produtos similares e sites focados na venda de doces para receber inspiração após ter a ideia.
 
-Quais sites, produtos, estilos ou referências ajudaram
-na construção da solução?
+Analisamos sites como Sucrier, Flakes Brasil, Sodiê, entre outros sites de confeitaria.
 
 
 ### Ferramentas utilizadas
 
-Exemplo:
-
 - React
 - VS Code / OpenCode
-- Figma
-- Ferramentas para geração de imagens
-- Outras ferramentas utilizadas
 
 
 ### Uso de IA
 
-Quais modelos foram utilizados?
+Modelos utilizados:
 
-Exemplo:
-
-- GPT
-- Claude
-- Gemini
-- outros
-
-Para que cada modelo foi utilizado?
-
-Durante o desenvolvimento vocês podem utilizar mais
-de um modelo e também trocar de modelo.
-
+- GPT-5 Mini
+  * Utilizado para desenvolver o site com React e CSS modularizado, além de gerar as imagens.
+    
 Descrevam, por exemplo:
 
 - Por que escolheram determinado modelo;
@@ -64,6 +50,7 @@ Descrevam, por exemplo:
 - Quais sugestões da IA foram mantidas;
 - Quais foram alteradas;
 - Quais foram descartadas.
+Escolhemos esse modelo por ser rápido, versátil e relativamente econômico no Azure Foundry.
 
 
 ### Evolução da solução
