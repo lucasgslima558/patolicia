@@ -1,0 +1,5 @@
+.header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:56px;height:56px;border-radius:50%;background:linear-gradient(180deg,var(--primary),#f6c84b);display:flex;align-items:center;justify-content:center;font-weight:700}
+.nav button{background:transparent;border:0;padding:8px 12px;border-radius:10px;color:var(--text);cursor:pointer}
+.primary{background:var(--primary);border-radius:12px;padding:8px 12px}
