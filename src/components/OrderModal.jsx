@@ -28,11 +28,11 @@ export default function OrderModal({onClose}){
   return (
     <div className={styles.modal}>
       <div className={styles.panel}>
-        <button onClick={onClose} style={{float:'right'}}>Fechar</button>
+        <button onClick={onClose} className={styles.close}>Fechar</button>
         <h3>Simulação de encomenda</h3>
         <div style={{display:'flex',gap:12,flexWrap:'wrap'}}>
           {BOXES.map((b,i)=>(
-            <div key={i} style={{cursor:'pointer',padding:10,borderRadius:10,background: b.name===box.name? 'var(--accent)':'#fff'}} onClick={()=>setBox(b)}>
+            <div key={i} className={styles.box} onClick={()=>setBox(b)}>
               <div style={{fontWeight:700}}>{b.name}</div>
               <div style={{color:'#6b6b6b'}}>{b.qty} bolinhos — R$ {b.price.toFixed(2)}</div>
             </div>
@@ -43,9 +43,9 @@ export default function OrderModal({onClose}){
           <div style={{fontWeight:700}}>Escolha os sabores</div>
           <div style={{display:'flex',gap:8,flexWrap:'wrap',marginTop:8}}>
             {selection.map((sel,i)=>(
-              <div key={i} style={{background:'#fff',padding:8,borderRadius:8,minWidth:140}}>
+              <div key={i} className={styles['select-container']}>
                 <div style={{fontSize:12,color:'#6b6b6b'}}>Bolinhos {i+1}</div>
-                <select value={sel} onChange={(e)=>toggleFlavor(i,e.target.value)}>
+                <select className={styles.select} value={sel} onChange={(e)=>toggleFlavor(i,e.target.value)}>
                   {flavors.map((f,ii)=>(<option key={ii} value={f}>{f}</option>))}
                 </select>
               </div>
@@ -59,10 +59,10 @@ export default function OrderModal({onClose}){
             <div>R$ {total}</div>
           </div>
           <div>
-            <button className="btn-primary" onClick={()=>{
-              alert('Pedido confirmado!\nResumo:\n'+box.name+' - '+box.qty+' bolinhos\nSabores: '+selection.join(', '));
-              onClose();
-            }}>Confirmar encomenda</button>
+              <button className={styles.confirm} onClick={()=>{
+                alert('Pedido confirmado!\nResumo:\n'+box.name+' - '+box.qty+' bolinhos\nSabores: '+selection.join(', '));
+                onClose();
+              }}>Confirmar encomenda</button>
           </div>
         </div>
       </div>

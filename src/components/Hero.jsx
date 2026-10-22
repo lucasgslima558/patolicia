@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Hero.module.css'
+import logo from '../../assets/logo.png'
 
 export default function Hero({onOpenOrder}){
   return (
@@ -12,9 +13,8 @@ export default function Hero({onOpenOrder}){
         </div>
       </div>
       <div className={styles['product-shot']}>
-        <div className={styles.duck}>
-          <div className={styles.inner}></div>
-        </div>
+        {/* Replace decorative duck figure with the logo image */}
+        <img src="/assets/logo.png" alt="Patolícia logo" style={{width:220,height:220,objectFit:'contain',borderRadius:12}} />
       </div>
     </section>
   )

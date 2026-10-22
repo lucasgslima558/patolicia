@@ -36,7 +36,7 @@ export default function App(){
       <section className="container section">
         <h3>Encomende agora</h3>
         <p>Faça uma simulação rápida antes de confirmar sua encomenda.</p>
-        <button className="btn-primary" onClick={vm.openOrder}>Quero experimentar</button>
+        <button className="btn-primary" onClick={vm.openOrder} style={{background:'var(--primary)',border:0,padding:'12px 20px',borderRadius:14,fontWeight:700,cursor:'pointer'}}>Quero experimentar</button>
       </section>
       <Footer />
       {vm.open && <OrderModal onClose={vm.closeOrder} />}
