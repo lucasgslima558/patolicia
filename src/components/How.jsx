@@ -9,11 +9,14 @@ export default function How(){
   return (
     <section className="container section">
       <h3>Como funciona</h3>
-      <div className="cards" style={{marginTop:12}}>
+      <div className="steps" style={{marginTop:16}}>
         {steps.map((s,i)=>(
-          <div key={i} className="card" style={{padding:12}}>
-            <div style={{fontWeight:700}}>{i+1}. {s.title}</div>
-            <div style={{color:'#6b6b6b',marginTop:6}}>{s.desc}</div>
+          <div key={i} className="step">
+            <div className="step-num">{i+1}</div>
+            <div>
+              <div style={{fontWeight:800}}>{s.title}</div>
+              <div style={{color:'#6b6b6b',marginTop:6}}>{s.desc}</div>
+            </div>
           </div>
         ))}
       </div>

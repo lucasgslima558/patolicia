@@ -10,9 +10,16 @@ const BOXES = [
 export default function Offer(){
   return (
     <section className="container section">
-      <h3>Oferta e preços</h3>
-      <div className="prices" style={{marginTop:12}}>
-        {BOXES.map((b,i)=>(<div className="price" key={i}><div style={{fontWeight:700}}>{b.name}</div><div style={{color:'#6b6b6b'}}>{b.qty} bolinhos</div><div style={{marginTop:8,fontWeight:800}}>R$ {b.price.toFixed(2)}</div></div>))}
+      <h3>Caixas e preços</h3>
+      <div className="prices" style={{marginTop:18}}>
+        {BOXES.map((b,i)=>(
+          <div className="price" key={i} style={{display:'flex',flexDirection:'column',alignItems:'center',padding:20}}>
+            <div className="label">{b.name}</div>
+            <div style={{color:'#6b6b6b',marginTop:6}}>{b.qty} bolinhos</div>
+            <div className="amount">R$ {b.price.toFixed(2)}</div>
+            <button className="btn-primary" style={{marginTop:12,background:'var(--primary)',border:0,padding:'10px 16px',borderRadius:12,cursor:'pointer',fontWeight:800}}>Encomendar</button>
+          </div>
+        ))}
       </div>
     </section>
   )

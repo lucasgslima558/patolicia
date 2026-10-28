@@ -6,15 +6,19 @@ export default function Hero({onOpenOrder}){
   return (
     <section className={`${styles.hero} container`}>
       <div className={styles['hero-left']}>
-        <h1>O bolinho mais fofo que você já comeu.</h1>
-        <p>Macio, delicioso e com um formato muito diferente.</p>
-        <div style={{marginTop:20}}>
+        <div className={styles.kicker}>Novidade</div>
+        <h1>O bolinho pato que conquista corações.</h1>
+        <p>Macio, recheado e irresistivelmente fofo — perfeito para presente ou para aquele momento doce com quem você gosta.</p>
+        <div className={styles['cta-row']}>
           <button className={styles.primary} onClick={onOpenOrder}>Quero experimentar</button>
+          <button className={styles.secondary} onClick={()=>document.getElementById('gallery')?.scrollIntoView({behavior:'smooth'})}>Ver sabores</button>
         </div>
       </div>
       <div className={styles['product-shot']}>
-        {/* Replace decorative duck figure with the logo image */}
-        <img src="/assets/logo.png" alt="Patolícia logo" style={{width:220,height:220,objectFit:'contain',borderRadius:12}} />
+        <div className={styles['decor-blob']} aria-hidden/>
+        <div className={styles['product-card']}>
+          <img src={'/assets/galeria/Gemini_Generated_Image_puiwm5puiwm5puiw.jpeg'} alt="Bolinhos Patinho"/>
+        </div>
       </div>
     </section>
   )
