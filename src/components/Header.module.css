@@ -1,5 +1,9 @@
 .header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .logo{display:flex;align-items:center;gap:12px}
 .logo-mark{width:56px;height:56px;border-radius:50%;background:linear-gradient(180deg,var(--primary),#f6c84b);display:flex;align-items:center;justify-content:center;font-weight:700}
-.nav button{background:transparent;border:0;padding:8px 12px;border-radius:10px;color:var(--text);cursor:pointer}
-.primary{background:var(--primary);border-radius:12px;padding:8px 12px}
+.nav button{background:transparent;border:0;padding:8px 12px;border-radius:10px;color:var(--text);cursor:pointer;transition:background 160ms ease,transform 160ms ease}
+.nav button:hover{background:rgba(0,0,0,0.03);transform:translateY(-2px)}
+.nav button:focus{outline:2px solid rgba(43,43,43,0.06);outline-offset:3px}
+.primary{background:var(--primary);border-radius:12px;padding:8px 12px;transition:transform 160ms ease,box-shadow 160ms ease}
+.primary:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(248,217,103,0.12)}
+.primary:focus{outline:3px solid rgba(248,217,103,0.22);outline-offset:3px}

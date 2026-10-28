@@ -6,6 +6,10 @@
 .primary{background:var(--primary);border:0;padding:14px 22px;border-radius:14px;font-weight:800;cursor:pointer;box-shadow:0 8px 18px rgba(248,217,103,0.18)}
 .secondary{background:transparent;border:1px solid rgba(43,43,43,0.06);padding:12px 18px;border-radius:12px;cursor:pointer}
 .cta-row{display:flex;gap:12px;align-items:center;margin-top:18px}
+.primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(248,217,103,0.18)}
+.primary:focus{outline:3px solid rgba(248,217,103,0.22);outline-offset:4px}
+.secondary:hover{background:rgba(43,43,43,0.02);transform:translateY(-2px)}
+.secondary:focus{outline:2px solid rgba(43,43,43,0.06);outline-offset:3px}
 .product-shot{flex:1;display:flex;align-items:center;justify-content:center;position:relative}
 .product-card{width:480px;height:420px;border-radius:20px;background:linear-gradient(180deg,#fff,#fff7ee);display:flex;align-items:center;justify-content:center;box-shadow:0 30px 60px rgba(43,43,43,0.12);transform:translateY(0)}
 .product-card img{width:380px;height:380px;object-fit:cover;border-radius:18px}

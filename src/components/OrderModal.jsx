@@ -32,7 +32,14 @@ export default function OrderModal({onClose}){
         <h3>Simulação de encomenda</h3>
         <div style={{display:'flex',gap:12,flexWrap:'wrap'}}>
           {BOXES.map((b,i)=>(
-            <div key={i} className={styles.box} onClick={()=>setBox(b)}>
+            <div key={i}
+              className={styles.box}
+              role="button"
+              tabIndex={0}
+              onClick={()=>setBox(b)}
+              onKeyDown={(e)=>{ if(e.key==="Enter"||e.key===" ") { e.preventDefault(); setBox(b) } }}
+              aria-pressed={box.name===b.name}
+            >
               <div style={{fontWeight:700}}>{b.name}</div>
               <div style={{color:'#6b6b6b'}}>{b.qty} bolinhos — R$ {b.price.toFixed(2)}</div>
             </div>
