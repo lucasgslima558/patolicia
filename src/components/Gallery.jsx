@@ -10,8 +10,18 @@ export default function Gallery(){
   return (
     <section id="gallery" className="container section">
       <h3>Galeria</h3>
-      <div className={styles.gallery} style={{marginTop:12}}>
-        {imgs.map((s,i)=>(<img key={i} src={s} alt="patinho" style={{width:'100%',height:'auto',objectFit:'cover'}}/>))}
+      <div className={styles.galleryLine} style={{marginTop:12}}>
+        <div className={styles.topRow}>
+          <div className={styles.leftLarge}>
+            <img src={imgs[0]} alt="patinho grande" />
+          </div>
+          <div className={styles.rightSmall}>
+            <img src={imgs[1]} alt="patinho pequeno" />
+          </div>
+        </div>
+        <div className={styles.fullRow}>
+          <img src={imgs[2]} alt="patinho destaque" />
+        </div>
       </div>
     </section>
   )
