@@ -17,4 +17,6 @@ Optamos por aprimorar a interface e a experiência do usuário (UI/UX) da landin
 
 3. **Melhoria da consistência visual:** A utilização do protótipo como referência contribuiu para manter maior coerência entre as seções, a organização dos elementos e a identidade visual da Patolícia, reduzindo a necessidade de definir a estrutura visual diretamente durante a codificação.
 
+4. **Limitações encontradas:** Como o desenvolvimento acabou sendo realizado integralmente no OpenCode, tanto o protótipo quanto a implementação do site apresentaram diferenças em relação ao resultado que desejávamos alcançar. Apesar do auxílio do MCP na construção da proposta visual, o resultado final não correspondeu completamente às expectativas iniciais, evidenciando a necessidade de mais ajustes e refinamentos, tanto no protótipo quanto no código implementado.
+
 ## 4. Evidências da Utilização
