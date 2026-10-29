@@ -8,22 +8,10 @@ import li from '../../assets/footer-redes/linkedin.png'
 export default function Footer(){
   return (
     <footer className="container footer">
-      <div className="footer-subscribe">
-        <div className="sub-left">
-          <div style={{fontWeight:800,fontSize:16}}>Assine nossas novidades</div>
-          <div style={{color:'#6b6b6b',fontSize:13}}>Receba lançamentos, ofertas e novidades da Patolícia.</div>
-        </div>
-        <div className="sub-right">
-          <input aria-label="Seu e-mail" placeholder="Digite seu e-mail" style={{padding:'10px 12px',borderRadius:8,border:'1px solid rgba(0,0,0,0.08)',marginRight:8}} />
-          <button className="btn-primary">Assinar</button>
-        </div>
-      </div>
-
       <div className="footer-columns">
         <div className="footer-col footer-brand">
           <img src={'/assets/logo.png'} alt="logo" style={{width:56,height:56,borderRadius:12,marginBottom:8}}/>
           <div style={{fontWeight:800}}>Patolícia</div>
-          <div style={{color:'#6b6b6b',fontSize:13,marginTop:6}}>Bolinhos em formato de pato — presentes e mimos saborosos com uma apresentação divertida.</div>
         </div>
 
         <div className="footer-col">
@@ -54,11 +42,6 @@ export default function Footer(){
             <a href="#" aria-label="LinkedIn"><img src={li} alt="LinkedIn" style={{width:22,height:22}}/></a>
           </div>
         </div>
-      </div>
-
-      <div className="footer-legal">
-        <div>&copy; {new Date().getFullYear()} Patolícia — Todos os direitos reservados</div>
-        <div>Desenvolvido pela equipe Patolícia</div>
       </div>
     </footer>
   )
