@@ -1,2 +1,5 @@
 .benefit{display:flex;gap:12px;align-items:flex-start}
-.icon{width:56px;height:56px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700}
+.benefit{transition:transform 200ms ease}
+.benefit:hover{transform:translateY(-4px)}
+.icon{width:56px;height:56px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;transition:transform 200ms ease,box-shadow 200ms ease}
+.icon:hover{transform:scale(1.06);box-shadow:0 10px 20px rgba(43,43,43,0.06)}

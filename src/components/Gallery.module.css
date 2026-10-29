@@ -1,3 +1,12 @@
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px}
-@media(max-width:800px){.gallery{grid-template-columns:1fr}}
+.galleryLine{width:100%}
+.topRow{display:grid;grid-template-columns:2fr 1fr;gap:16px;align-items:stretch}
+.leftLarge{height:360px}
+.rightSmall{height:360px}
+.leftLarge img,.rightSmall img,.fullRow img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+.fullRow{margin-top:16px;height:420px}
+
+@media(max-width:900px){
+  .topRow{grid-template-columns:1fr;}
+  .leftLarge,.rightSmall,.fullRow{height:auto}
+  .leftLarge img,.rightSmall img,.fullRow img{height:auto}
+}
